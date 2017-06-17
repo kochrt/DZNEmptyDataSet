@@ -511,7 +511,7 @@ static char const * const kEmptyDataSetView =       "emptyDataSetView";
                 [view.button setImage:buttonImage forState:UIControlStateNormal];
                 [view.button setImage:[self dzn_buttonImageForState:UIControlStateHighlighted] forState:UIControlStateHighlighted];
             }
-            else if (buttonTitle) {
+            if (buttonTitle) {
                 [view.button setAttributedTitle:buttonTitle forState:UIControlStateNormal];
                 [view.button setAttributedTitle:[self dzn_buttonTitleForState:UIControlStateHighlighted] forState:UIControlStateHighlighted];
                 [view.button setBackgroundImage:[self dzn_buttonBackgroundImageForState:UIControlStateNormal] forState:UIControlStateNormal];
